@@ -10,7 +10,7 @@ class testTaskEditor(unittest.TestCase):
         self.newEditor = TaskEditor(self.newList)
 
     def test_editName(self):
-        task = Task("Task 1", "Description 1")
+        task = Task("Task 1", "Description 1", "Normal")
         self.newList.addTask(task)
           
         new_name = "Updated Task Name"
@@ -18,7 +18,7 @@ class testTaskEditor(unittest.TestCase):
         self.assertEqual(task.name, new_name)
 
     def test_editDescription(self):
-        task = Task("Task 1", "Task Description")
+        task = Task("Task 1", "Task Description", "Normal")
         self.newList.addTask(task)
 
         new_description = "New Description"
@@ -26,7 +26,7 @@ class testTaskEditor(unittest.TestCase):
         self.assertEqual(task.description, new_description)
 
     def test_editDeadline(self):
-        task = Task("Task 1", "Description", deadline = "04-30-2024")
+        task = Task("Task 1", "Description", "Normal", deadline = "04-30-2024")
         self.newList.addTask(task)
 
         new_deadline = "05-12-2024"
