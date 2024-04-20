@@ -5,8 +5,8 @@ class testTask(unittest.TestCase):
 
 
     def test_setUp(self):
-        newTask = Task("Dishes", "do the dishes", "March 1, 2024")
-        expected = "Dishes - do the dishes (Deadline: March 1, 2024) [Completed: False]"
+        newTask = Task("Dishes", "do the dishes", "Normal", "March 1, 2024")
+        expected = "Dishes - do the dishes (Deadline: March 1, 2024) [Completed: False] [Priority: Normal]"
         self.assertEqual(str(newTask), expected)
 
 
