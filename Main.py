@@ -17,8 +17,6 @@ def main():
         print("\nWelcome to the Todo List Menu\n")
         print("Choose one of our menu options!\n\n")
 
-        print("\n\n\nTESTING HERE\n\n\n")
-
         print("1. Add Task\n")
         print("2. Edit Task\n")
         print("3. Remove Task\n")
