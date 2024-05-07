@@ -82,13 +82,12 @@ def main():
             print("\nFilter Options:\n")
             print("1. By Completed Status\n")
             print("2. By Priority\n")
-
             filterChoice = input("Enter your filter option: ")
             if filterChoice == "1":
                 filteredTasks = filter.filterCompleted()
             elif filterChoice == "2":
                 taskPriority = input("Enter priority level (High, Normal, Low): ")
-                filteredTasks = filter.filterPriority()
+                filteredTasks = filter.filterPriority(taskPriority)
             else:
                 print("Invalid filter choice!\n")
                 continue
